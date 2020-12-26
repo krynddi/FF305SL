@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<p lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Сортировка по типу</title>
+        <style>
+            body {
+                background: #c7b39b; 
+                color: #fff; 
+            }
+        </style>
+        <div id="header">
+            <a href="http://127.0.0.1:8000"><img src="data:image/png;base64,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" width="269" height="107"></a>
+</div>
+    </head>
+<body>
+    <h2>Выберите тип и количество логов, которые хотите увидеть:</h2>
+    <form action="" method="post">
+        <p> Количество логов <input type="text" name="count" placeholder="10"></p>
+        <input name="type" type="radio" checked value="ALL"> Все<br>
+        <input name="type" type="radio" value="Info"> Info<br>
+        <input name="type" type="radio" value="Warning"> Warning<br>
+        <input name="type" type="radio" value="Error"> Error
+        <p><button type="submit">Нажмите чтобы фильтровать</button></p>
+    </form>
+    {% for i in result %}
+        <p>{{ i }}</p>
+    {% endfor %}
+</body>
+</html>
